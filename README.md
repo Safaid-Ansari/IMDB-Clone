@@ -2,6 +2,9 @@
 
 This is a complete Front-end based Project trying to replicate IMDb website. This project uses the TMDB API providing access to a huge database of Movies and their details.
 
+
+Check Here : https://safaid-ansari.github.io/IMDbClone/index.html
+
 The website has 3 pages
 
 1. Homepage - Displays all recent and popular movies with a few options to play around with.
