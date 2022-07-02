@@ -3,7 +3,7 @@
 This is a complete Front-end based Project trying to replicate IMDb website. This project uses the TMDB API providing access to a huge database of Movies and their details.
 
 
-Check Here : https://safaid-ansari.github.io/IMDbClone/index.html
+Check Here : https://safaid-ansari.github.io/IMDB-Clone/index.html
 
 The website has 3 pages
 
