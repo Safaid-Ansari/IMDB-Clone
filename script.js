@@ -89,23 +89,7 @@ function createMovieElement(movie){
     movieContainer.appendChild(movieElement);
 }
 
-
-//each movie element image is an <a> tag which will redirect to movie page with movie name and its rating as query string. This passed data will then be used to fetch individual movie details from OMDB Api and display them. rading is passed specifically to avoid mis match issues
-
-// populating movies according to button clicked
-// rRatedMoviesBtn.addEventListener('click', function(){
-//     window.alert('This request has been blocked; the content must be served over HTTPS. API Not Secure');
-//     // pageHeading.innerHTML = 'Top R Rated Movies';
-
-//     // //testing for error
-//     // try{
-//     //     apiRequestCall(TMDB_BASE_URL+TMDB_BEST_R_RATED+TMDB_API_KEY);
-//     // }
-//     // catch(err){
-//     //     window.alert(err);
-//     // }
-    
-// });
+// 1:
 
 kidsMoviesBtn.addEventListener('click', function(){
     pageHeading.innerHTML = 'Popular In Kids';
@@ -198,54 +182,9 @@ function displaySelectedYearMovies(){
 
 // this json will be contains movie titles which will be used to open movie specific pages
 
-
-let imdbMovieDatasetJson ;
-// using fetch api to load the local file into js. this will return a promise on which we we convert it into json and then store that into javascript variable accessible outside as well
-
-// this dataset is not complete so some movies might not come in search result
-fetch("./assets/try2Json.json")
-.then(response =>response.json())
-.then(locallyLoadedJson => {
-    imdbMovieDatasetJson = locallyLoadedJson;
-})
-// --------------------------------------------------------NOTE:------------------------------------------------------------------
-// since the file is on a local machine, we should not open index.html file as a file into browser directly or else fetch will not work. Instead, use the link or local hosting or vscode -> open with live server
-
-
-
-
-// implementing search bar functionality
-
-// fetching the necessary dom elements 
-
-
-searchInput.addEventListener('keyup', ()=>{
-    let results = [];
-    var searchInputText = searchInput.value;
-    if (searchInputText.length != 0) {
-        results = imdbMovieDatasetJson.filter((item) => {
-            return item.Title.toLowerCase().includes(searchInputText.toLowerCase());
-        });
-    }
-    renderResults(results);    
-});
-
-function renderResults(results) {
-    // if the input string is empty, we hide the box
-    if (results.length == 0) {
-        return  wrapperDiv.classList.remove('show');;
-    }
-
-    // else we create a new list element add it to ul
-    const content = results.map((eachMovieobject) => {
-        // <li> <a href="moviePage.html?id=${id-to-be-passed-as-query}">${set-name-of -each-list-item}</a></li>
-        return `<li> <a href="moviePage.html?id=${eachMovieobject.id}">${eachMovieobject.Title}</a></li>`;
-    }).join('');
-    wrapperDiv.classList.add('show');
-    resultsDiv.innerHTML = `<ul>${content}</ul>`;
-}
 */
 
+// 2:
 
 
 
