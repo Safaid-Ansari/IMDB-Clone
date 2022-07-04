@@ -25,11 +25,6 @@ Usage Examples - https://www.themoviedb.org/documentation/api/discover
 
 
 
-## Screenshots
-![Screenshot (24)](https://user-images.githubusercontent.com/88011310/162433722-d55bf8f1-4657-4360-a305-715d011e1437.png)
-![Screenshot (26)](https://user-images.githubusercontent.com/88011310/162433777-b3597d80-7f51-40b5-abb9-860e6800b3ad.png)
-![Screenshot (29)](https://user-images.githubusercontent.com/88011310/162433804-c2838985-c96a-4ce2-baff-8afe82c03eb7.png)
-![Screenshot (30)](https://user-images.githubusercontent.com/88011310/162433812-f4b4ea73-90fb-497a-b624-28e9ca5ca898.png)
 
 
 

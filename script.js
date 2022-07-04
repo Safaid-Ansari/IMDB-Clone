@@ -187,7 +187,7 @@ function displaySelectedYearMovies(){
 // ------------------------NOTE 0.0------------------------
 
 // Goofle like search bar functionality using a dataset and providing a list of matched patterns
-// due to vaey large DataTransferItem, searching was slower and slowed the website as well
+// due to vary large DataTransferItem, searching was slower and slowed the website as well
 // depriciated this code and new method to implement search bar is written below
 /*
 
