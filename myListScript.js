@@ -5,17 +5,17 @@ var myListArray = JSON.parse(storageString);
 
 
 // TMDB urls for different usecases
-const TMDB_API_KEY = 'api_key=9ede1e3342a35f773734da8da1f49ef0';
+const IMDB_API_KEY = 'api_key=9ede1e3342a35f773734da8da1f49ef0';
 
-const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
+const IMDB_BASE_URL = 'https://api.themoviedb.org/3';
 
-const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
+const IMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
 
 //for each list item
 myListArray.forEach(async id =>{
     let id_query = `/movie/${id}?language=en-US&`;
-    let final_url = TMDB_BASE_URL+id_query+TMDB_API_KEY;
+    let final_url = IMDB_BASE_URL+id_query+IMDB_API_KEY;
     // console.log(final_url);
     await apiFunctionCall(final_url, id);
 });
@@ -42,7 +42,7 @@ function renderListItems(jsonResp, id){
     eachListItem.innerHTML = `
         <div class="movie-details">
             <div class="thumbnail">
-                <img src=${TMDB_IMAGE_BASE_URL+jsonResp.poster_path} alt="Thumbnail">
+                <img src=${IMDB_IMAGE_BASE_URL+jsonResp.poster_path} alt="Thumbnail">
             </div>
                 <div class="title">
                     <a href="moviePage.html?id=${id}"> ${jsonResp.title} </a> 
